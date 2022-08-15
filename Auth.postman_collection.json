@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "78954991-3d00-49e2-85b5-aa111a10af2f",
+		"name": "Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20666023"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Idea",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "summer",
+							"type": "text"
+						},
+						{
+							"key": "img",
+							"type": "file",
+							"src": "/C:/Users/ZAHID/Desktop/b1.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/auth/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

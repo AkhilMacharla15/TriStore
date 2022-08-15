@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "179c0ffb-3168-4159-a21e-f501d84c4553",
+		"name": "Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20666023"
+	},
+	"item": [
+		{
+			"name": "Items",
+			"item": [
+				{
+					"name": "ADD Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "WinterT-SHirt 8",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "62c59dcd0a7dc53e8efa2f14",
+									"type": "text"
+								},
+								{
+									"key": "brand",
+									"value": "62c447f7d7df444a5d4ff1bf",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "340",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "img",
+									"type": "file",
+									"src": "/C:/Users/ZAHID/Desktop/New folder (2)/8.webp"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/product",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/product",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/product?id=62bc8eb61eb870d1bfe51bd6",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"product"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "62bc8eb61eb870d1bfe51bd6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EDIT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "img",
+									"type": "file",
+									"src": "/C:/Users/ZAHID/Desktop/New folder (2)/1.jpg",
+									"disabled": true
+								},
+								{
+									"key": "price",
+									"value": "120",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/product?id=62c44921d7df444a5d4ff1c2",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"product"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "62c44921d7df444a5d4ff1c2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "ADD Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Winter Collection\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/category",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GETTING",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/category",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EDIT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/category?id=62c44921d7df444a5d4ff1c2",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"category"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "62c44921d7df444a5d4ff1c2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Brand",
+			"item": [
+				{
+					"name": "ADD Brand",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Adidas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/brand",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"brand"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GETTING",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/brand",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"brand"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EDIT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/brand?id=62c44921d7df444a5d4ff1c2",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"brand"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "62c44921d7df444a5d4ff1c2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

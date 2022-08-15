@@ -1,0 +1,55 @@
+.contact_container {
+    margin: 3rem 1rem;
+    .h1{
+        text-align: center;
+        font-family: 'Barlow';
+        font-style: bold;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 141.6%;
+        margin-top: 15px;
+
+        margin-bottom: 0px;
+        color: #25282A;        
+
+    }
+    // .email{
+    //     text-align: center;
+    //     font-family: 'Barlow';
+    //     font-style: bold;
+    //     font-weight: 700;
+    //     font-size: 20px;
+    //     line-height: 141.6%;
+    //     margin-top: 15px;
+
+    //     margin-bottom: 0px;
+    //     color: #25282A;        
+
+    // }
+    .customercare{
+        text-align: center;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 141.6%;
+        margin-top: 100px;
+
+        margin-bottom: 0px;
+        color: #4a788f;
+
+    }
+    .eaddress{
+        text-align: center;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 141.6%;
+        margin-top: 100px;
+
+        margin-bottom: 0px;
+        color: #000085        ;
+
+    }
+}
